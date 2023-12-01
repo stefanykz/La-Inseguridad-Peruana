@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>La inseguridad peruana</title>
+	<style>
+	*{
+
+	margin: 0px;
+	padding: 0px;		
+		}
+
+body {
+	background: #B3BCBD;
+	font-family: arial, helvetica, sans-serif;
+
+}
+
+#container{
+	width: 1100px;
+	margin: 0px auto;
+	border: 1px solid black;
+
+}
+
+header { 
+	background-color: #C7E1E8; 
+	width:100%;
+	height:100px;
+	text-align: center;
+	line-height: 100px;
+
+}
+nav { 
+	background: #C9C2CB;
+height: 50px;
+border: 1px solid black;
+
+}
+
+nav ul li{
+float: left;
+list-style: none;
+margin: 10px;
+line-height: 30px;
+
+}
+
+.clearfix{
+clear: both;
+}
+
+#content{
+	float: left;
+	width: 80%;
+	background:#E1D1EF;
+	min-height: 500px;
+}
+
+
+aside {
+	float: left;
+ 	width: 20%;
+ 	background: white;
+ 	min-height: 500px;
+ }
+
+footer {
+	background-color:black;
+	color: #fff;
+	height:50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.article { 
+	color: black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #eee;
+} 
+
+</style>
+<script>
+	// Función para procesar el formulario de guardar datos
+	function guardarDatos(){
+		// Obtener los valores de los campos del formulario 
+		var nombre = document.getElementById("nombre").value;
+		var apellido = document.getElementById("apellido").value;
+		var ciudad = document.getElementById("ciudad").value;
+		var pais = document.getElementById("pais").value;
+		// Aquí puedes realizar acciones adicionales como enviar los datos
+	}
+
+	// Función para procesar el formulario de busqueda en Google
+	function buscarGoogle() {
+		var query = document.getElementById("busqueda").value;
+		var url = "https://www.google.com/search?q=" + encodeURIComponer
+		// Redirigir a la página de busqueda Google 
+		window.location.href = url;
+	}
+</script>
+</head>
+<body>
+	<div id="container">
+	<header>
+		<h1>Inseguridad peruana</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="Index.html">Inicio</a></li>
+			<li><a href="Se esta haciendo algo al respecto.html">¿Cómo se está enfrentando la inseguridad ciudadana?</a></li>
+			<li><a href="Soluciones.html">Propuestas de solución</a></li>
+		</ul>
+	</nav>
+	<div class="clearfix"></div>
+
+	<section id="content">
+	<article class="article">
+		<h1>Posibles soluciones</h1>
+		<p>La mitigación de la delincuencia es un desafío que requiere un enfoque integral y coordinado en todos los niveles de gobierno. Para lograrlo, es esencial implementar medidas que van más allá de la simple asignación de recursos, para involucrar la mejora de las capacidades policiales, la promoción de la educación y la formación de habilidades. 
+
+		Por ello, el Gobierno debería enfocarse en políticas preventivas que aborden las causas subyacentes de la delincuencia, mediante el uso de la tecnología para fortalecer la vigilancia y el seguimiento. Además, la implementación de leyes efectivas y sistemas judiciales eficientes son cruciales para garantizar que los delincuentes asuman la responsabilidad por sus acciones. Solo a través de una estrategia integral y colaborativa, que involucre a todos los niveles gubernamentales y a la sociedad en su conjunto, se podrá construir un entorno más seguro para todos los ciudadanos.</p>
+	<div class="imagen-container">
+			<img src="imagenes/imagen5.JPG" width="400" height="250" alt="imagen3">
+		</div>
+	</article>
+	<article class="article">
+		<h1>Prevención</h1>
+		<p> La clave es “nunca enfrentar al delincuente, sino evitarlo”, precisa César Ortiz. Para el especialista en seguridad ciudadana lo importante es seguir rocomendaciones como no hablar por teléfono en la vía pública, no ingresar a un cajero de noche, no retirar grandes sumas de dinero en el banco, etc.
+
+		Pero ninguna acción -explica- es tan efectiva como la ‘Cuadra segura’, que implica incentivar y fortalecer mediante acciones la relación solidaria entre los vecinos, así como promover la recuperación de los espacios públicos. Según "Lima Cómo Vamos", la iluminación en las calles se encuentra entre los tres principales factores que harían que los limeños y chalacos se sientan más seguros en las calles.</p>
+		<div class="imagen-container">
+			<img src="imagenes/imagen6.JPG" width="400" height="250" alt="imagen3">
+		</div>
+	</article>
+</section>
+		<section>
+		<div class="form-container">
+			<h2>Guarda Datos</h2>
+			<form>
+				<label for="form">Nombre:</label>
+				<input type="text" id="nombre" name="nombre"><br>
+				<label for="apellido">Apellido:</label>
+				<input type="text" id="apellido" name="apellido"><br>
+				<label for="ciudad">Ciudad:</label>
+				<input type="text" id="ciudad" name="ciudad"><br>
+				<label for=país>País:</label>
+				<input type="text" id="país" name="país"><br>
+				<input type="submit" value="Guardar">
+			</form>
+		</div>
+	</section>
+	<aside>
+		<h3>Buscar en Google</h3>
+
+		<form action="https://www.google.com/search" method="get">
+			<input type="text" name="q" placeholder="Buscar en Google">
+			<input type="submit" value="Buscar">
+		</form>
+		<h3>Video de Youtbe</h3>
+		<iframe width="220" height="150" src="https://www.youtube.com/embed/V4gnscG31EE?si=u7hwqCnLHfwJPdc3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</aside>
+	<div class="clearfix"></div>
+
+	<footer>
+		&copy; Stefany Kori 2023-La inseguridad peruana
+	</footer>
+</div>
+</body>
+</html>
